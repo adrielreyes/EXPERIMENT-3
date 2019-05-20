@@ -1,0 +1,33 @@
+// Problem 1
+// Adriel Brian L. Reyes
+// 1 - 12 
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int i, n;
+    float arr[100];
+
+    cout << "Please enter the total number of elements(1 to 100): ";
+    cin >> n;
+    cout << endl;
+
+    for(i = 0; i < n; ++i)
+    {
+       cout << "Please enter the number " << i + 1 << " : ";
+       cin >> arr[i];
+    }
+
+    for(i = 1;i < n; ++i)
+    {
+       if(arr[0] < arr[i])
+           arr[0] = arr[i];
+    }
+    cout << "\n\nThe largest element is = " << arr[0];
+    cout << "\n\nThank You! Godbless";
+
+    return 0;
+}
