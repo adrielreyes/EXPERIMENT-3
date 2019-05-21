@@ -1,0 +1,40 @@
+// Problem
+// Adriel Brian L. Reyes
+// 1 - 12 
+
+
+
+#include <iostream>
+using namespace std;
+
+const int PROVINCE = 3;
+const int WEEK = 7;
+
+int main()
+{
+    int temperature[PROVINCE][WEEK];
+
+    cout << "Enter all temperature for a week of first province, second province and then the third province: \n";
+
+
+    for (int i = 0; i < PROVINCE; ++i)
+    {
+        for(int j = 0; j < WEEK; ++j)
+        {
+            cout << "PROVINCE " << i + 1 << ", Day " << j + 1 << " : ";
+            cin >> temperature[i][j];
+        }
+    }
+
+    cout << "\n\nDisplaying the Values:\n\n";
+
+    for (int i = 0; i < PROVINCE; ++i)
+    {
+        for(int j = 0; j < WEEK; ++j)
+        {
+            cout << "PROVINCE " << i + 1 << ", Day " << j + 1 << " = " << temperature[i][j] << endl;
+        }
+    }
+
+    return 0;
+}
