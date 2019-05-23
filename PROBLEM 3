@@ -1,0 +1,39 @@
+#include <iostream>
+#include <string.h>
+
+using namespace std;
+
+int main()
+{
+    
+    int size;
+    char in[100], out[100];
+    
+    cout << "\nPlease enter any word you want to be reverse:\n ";
+    cin >> in;
+    
+    size = strlen(in);
+    
+    for (int i = 0, j = size ; i <= size ; i++, j--)
+    {
+        out[j] = in[i];
+    }
+    
+    cout << "\n\n" << endl;
+    
+    for (int i=0 ; i<= size ; i++)
+    {
+        cout << out[i] << ' ';
+    }
+    
+    cout << "\n\nThe word had been reversed!";
+    
+    cout << "\n\nThe size of the array is: " << size << endl;
+    
+    cout << "\n\nThank you and Godbless! ";
+    
+    
+
+    return 0;
+    
+}
